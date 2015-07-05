@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/margin_med" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/margin_med" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tinder.views.RoundImageView android:id="@id/img_moment" android:layout_width="@dimen/msg_like_pic_img_length" android:layout_height="@dimen/msg_like_pic_img_length" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:cornerRadius="4" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/msg_like_heart_neg_margin" android:src="@drawable/chat_likedmoment" android:layout_alignRight="@id/img_moment" android:layout_centerVertical="true" />
+    <com.tinder.views.CustomTextView android:textSize="@dimen/msg_like_text_size" android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/txt_liked_your_moment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_toRightOf="@id/img_moment" android:layout_centerVertical="true" app:font="light|light_italic" />
+</RelativeLayout>

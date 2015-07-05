@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invalid_panorama_data">Invalid panorama.</string>
+    <string name="no_panorama_data">No panorama data set.</string>
+    <string name="panorama_disabled">Picture no longer available</string>
+    <string name="service_unavailable">Street View service unavailable.</string>
+    <string name="street_range_name_format">%1$s %2$s</string>
+</resources>

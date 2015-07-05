@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wearableApp package="com.tinder">
+    <versionCode>813</versionCode>
+    <versionName>4.1.6</versionName>
+    <rawPathResId>android_wear_micro_apk</rawPathResId>
+</wearableApp>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <size android:height="@dimen/avatar_length_my_moments_activity" android:width="@dimen/avatar_length_my_moments_activity" />
+    <stroke android:width="@dimen/empty_outline_thickness" android:color="@color/tinder_id_light_text" />
+</shape>

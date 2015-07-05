@@ -1,0 +1,22 @@
+package com.tinder.managers;
+
+import com.tinder.b.f;
+import com.tinder.model.Match;
+import com.tinder.utils.c.b;
+
+class h$5
+  implements c.b
+{
+  h$5(h paramh, Match paramMatch) {}
+  
+  public void a()
+  {
+    new f().a(a);
+  }
+}
+
+/* Location:
+ * Qualified Name:     com.tinder.managers.h.5
+ * Java Class Version: 6 (50.0)
+ * JD-Core Version:    0.7.1
+ */

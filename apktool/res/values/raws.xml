@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="raw" name="gtm_analytics">res/raw/gtm_analytics</item>
+    <item type="raw" name="instagram_auth_error">res/raw/instagram_auth_error</item>
+    <item type="raw" name="instagram_auth_error_account_in_use">res/raw/instagram_auth_error_account_in_use</item>
+    <item type="raw" name="instagram_dataset">res/raw/instagram_dataset</item>
+    <item type="raw" name="instagram_deauth_success">res/raw/instagram_deauth_success</item>
+</resources>

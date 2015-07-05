@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/passport_layout_parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/passport_settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/translucent_black" />
+    <FrameLayout android:id="@id/test" android:layout_width="@dimen/passport_dashboard_width" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/passport_settings_parent_relative" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/recs_passport_options_linear" android:background="@drawable/rounded_rectangle_white" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.tinder.views.CustomTextView android:textSize="@dimen/text_med" android:textColor="@color/text_dark" android:layout_gravity="left" android:id="@id/passport_settings_txt_title" android:padding="@dimen/padding_med" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discover_people_in" app:font="semi_bold" />
+                <View android:background="@color/ab_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_stroke_width" />
+                <ListView android:layout_gravity="center_vertical" android:id="@id/recs_passport_options_listview" android:fadingEdge="none" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="@dimen/passport_dashboard_list_max_height" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/rec_passport_add_location_layout" android:background="@drawable/rounded_rectangle_passport" android:padding="@dimen/padding_med" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/white" android:id="@id/recs_passport_txt_add_location" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_a_new_location" android:layout_centerInParent="true" />
+                    <ImageView android:paddingRight="@dimen/padding_med" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recs_passport_addlocation" android:layout_toLeftOf="@id/recs_passport_txt_add_location" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marker_triangle_neg_margin" android:src="@drawable/passport_map_pin_bottomtriangle" android:layout_below="@id/recs_passport_options_linear" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageButton android:id="@id/recs_passport_options_close" android:background="@null" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recs_passport_close" android:layout_below="@id/test" android:layout_alignLeft="@id/test" />
+</RelativeLayout>

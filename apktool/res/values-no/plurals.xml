@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="distance_units_away_km">
+        <item quantity="other">%d kilometer unna</item>
+        <item quantity="one">%d kilometer unna</item>
+    </plurals>
+    <plurals name="distance_units_away_mi">
+        <item quantity="other">%d am. mil unna</item>
+        <item quantity="one">%d am. mil unna</item>
+    </plurals>
+    <plurals name="hours_left_plural">
+        <item quantity="other">%d timer igjen</item>
+        <item quantity="one">%d hour left</item>
+    </plurals>
+    <plurals name="likes_plural">
+        <item quantity="other">%d liker</item>
+        <item quantity="one">%d like</item>
+    </plurals>
+    <plurals name="minutes_left_plural">
+        <item quantity="other">%d minutter igjen</item>
+        <item quantity="one">%d minute left</item>
+    </plurals>
+    <plurals name="num_moments">
+        <item quantity="other">%d øyeblikksbilder</item>
+        <item quantity="one">%d øyeblikksbilde</item>
+    </plurals>
+    <plurals name="photo_count_plural">
+        <item quantity="other">%d bilder</item>
+        <item quantity="one">%d bilde</item>
+    </plurals>
+</resources>

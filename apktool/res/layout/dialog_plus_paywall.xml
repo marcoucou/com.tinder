@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/paywall_layout_undo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_xsmall">
+        <ImageView android:id="@id/paywall_btn_rewind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/four_part_paywall_undo" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/paywall_rewind_txt_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_toRightOf="@id/paywall_btn_rewind" android:layout_centerVertical="true">
+            <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:id="@id/paywall_txt_rewind_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="@string/undo" />
+            <com.tinder.views.CustomTextView android:textSize="@dimen/text_large" android:textColor="@color/text_light" android:id="@id/paywall_txt_rewind_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/undo_description" />
+        </LinearLayout>
+        <View android:background="@color/divider_light" android:layout_width="fill_parent" android:layout_height="@dimen/nav_divider_height" android:layout_marginTop="@dimen/margin_large" android:layout_below="@id/paywall_btn_rewind" android:layout_alignLeft="@id/paywall_rewind_txt_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/paywall_layout_passport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small">
+        <ImageView android:id="@id/paywall_btn_passport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/four_part_paywall_passport" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/paywall_passport_txt_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_toRightOf="@id/paywall_btn_passport" android:layout_centerVertical="true">
+            <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:id="@id/paywall_txt_passport_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="@string/passport" />
+            <com.tinder.views.CustomTextView android:textSize="@dimen/text_large" android:textColor="@color/text_light" android:id="@id/paywall_txt_passport_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/passport_description" /> />
+</LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/divider_light" android:layout_width="fill_parent" android:layout_height="@dimen/nav_divider_height" android:layout_marginTop="@dimen/margin_med" android:layout_below="@id/paywall_btn_passport" android:layout_alignLeft="@id/paywall_passport_txt_layout" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/paywall_pay_layout" android:background="@drawable/rounded_rectangle_orange" android:paddingTop="@dimen/padding_med" android:paddingBottom="@dimen/padding_med" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_med" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_med">
+        <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/paywall_pay_button_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plus_paywall_pay" />
+    </LinearLayout>
+</LinearLayout>

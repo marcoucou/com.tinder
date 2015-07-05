@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_med" android:layout_below="@id/view_card_stack" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recs_buttons_background" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/recs_layout_likepass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageButton android:id="@id/recs_btn_pass" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/game_pass_marginRight" android:src="@drawable/selector_recs_pass" android:layout_centerInParent="true" android:contentDescription="pass_button" />
+        <com.tinder.views.LikeMeter android:id="@id/recs_btn_like" android:background="@drawable/recs_buttons_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="like_button" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/recs_layout_rewind" android:background="@drawable/recs_button_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xxsmall" android:layout_marginRight="@dimen/game_plus_buttons_margin" android:layout_toLeftOf="@id/recs_layout_likepass" android:layout_alignTop="@id/recs_layout_likepass">
+        <ImageView android:layout_gravity="center" android:id="@id/recs_icon_rewind" android:background="@null" android:paddingBottom="@dimen/padding_xsmall" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_recs_undo_icon" android:contentDescription="recs_rewind_button" />
+    </FrameLayout>
+    <ImageButton android:id="@id/recs_btn_passport" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/game_plus_buttons_margin" android:src="@drawable/recs_passport_available" android:layout_toRightOf="@id/recs_layout_likepass" android:layout_alignTop="@id/recs_layout_rewind" android:contentDescription="rec_passport_button" />
+</RelativeLayout>

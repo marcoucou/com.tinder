@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/matchesTop" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout android:id="@id/ptr_layout_no_matches" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/no_matches" android:paddingTop="@dimen/padding_large" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_xxlarge" android:layout_marginBottom="@dimen/no_matches_margin_from_buttons">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nomatches_youhavenomatches_icon" />
+                    <com.tinder.views.CustomTextView android:textSize="@dimen/you_have_no_matches" android:textColor="@color/text_light" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/you_have_no_matches" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/discover_new_people" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_xlarge" android:layout_marginRight="@dimen/margin_xlarge" android:layout_marginBottom="@dimen/margin_med" style="@style/orange_rect_button">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:src="@drawable/nomatches_discovernewpeople_icon" />
+                    <com.tinder.views.CustomTextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discover_new_people" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout android:id="@id/ptr_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/match_list" android:visibility="invisible" style="@style/match_list" />
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+    <ListView android:id="@id/search_match_list" android:visibility="gone" style="@style/match_list" />
+    <com.tinder.views.MomentsStack android:id="@id/moment_stack" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ProgressBar android:id="@id/spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+</RelativeLayout>

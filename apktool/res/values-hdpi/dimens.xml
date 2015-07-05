@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_text_size">17.0dip</dimen>
+    <dimen name="intro_heading_text_size">18.0dip</dimen>
+    <dimen name="match_request_subtitle_text_size">15.0dip</dimen>
+    <dimen name="photo_container_sides">50.0dip</dimen>
+    <dimen name="text_large">16.0dip</dimen>
+    <dimen name="text_med">14.0dip</dimen>
+    <dimen name="text_xlarge">18.0dip</dimen>
+    <dimen name="text_xsmall">10.0dip</dimen>
+    <dimen name="text_xxlarge">30.0dip</dimen>
+    <dimen name="com_facebook_picker_divider_width">1.0px</dimen>
+</resources>

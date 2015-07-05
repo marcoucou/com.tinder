@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout android:id="@id/pullToRefreshLayout_my_moments" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listView_activity" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_no_activity_message" android:background="@drawable/white_gradient_bg" android:paddingBottom="@dimen/margin_xxlarge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <com.tinder.views.CustomTextView android:textSize="@dimen/text_large" android:textColor="@color/moments_no_moments_title_text" android:gravity="center_horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recent_activity" app:font="semi_bold" />
+        <com.tinder.views.CustomTextView android:textSize="@dimen/text_med" android:textColor="@color/tinder_id_light_text" android:gravity="center_horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_moments_no_activity" app:font="semi_bold" />
+    </LinearLayout>
+</RelativeLayout>

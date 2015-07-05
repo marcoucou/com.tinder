@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height">56.0dip</dimen>
+    <dimen name="abc_action_bar_icon_vertical_padding">4.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_bottom_margin">9.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abc_action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="dialog_txt_max_height">400.0dip</dimen>
+    <dimen name="intro_heading_text_size">38.0dip</dimen>
+    <dimen name="loading_img_container_length">204.0dip</dimen>
+    <dimen name="loading_img_length">200.0dip</dimen>
+    <dimen name="matched_avatar_frame_length">198.0dip</dimen>
+    <dimen name="matched_avatar_length">190.0dip</dimen>
+    <dimen name="matched_text_size">28.0dip</dimen>
+    <dimen name="moment_stack_height">240.0dip</dimen>
+    <dimen name="moments_stack_card_height">200.0dip</dimen>
+    <dimen name="moments_stack_dummy_card_height">208.0dip</dimen>
+    <dimen name="passport_dashboard_list_max_height">400.0dip</dimen>
+    <dimen name="passport_dashboard_width">500.0dip</dimen>
+    <dimen name="paywall_dialog_width">420.0dip</dimen>
+    <dimen name="rec_card_offset">16.0dip</dimen>
+    <dimen name="width_dialog">400.0dip</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tinder.views.RoundedRelativeLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/padding_xxsmall" android:layout_width="@dimen/width_dialog" android:layout_height="fill_parent" app:corners="@dimen/rounded_card_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tinder.views.CustomButton android:id="@id/moment_game_dialog_btn_like_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/moment_dialog_send_message" android:layout_alignParentTop="true" style="@style/moment_game_dialog_text" />
+    <View android:id="@id/divider_likemsg" android:layout_width="fill_parent" android:layout_height="@dimen/height_separator" android:layout_below="@id/moment_game_dialog_btn_like_message" style="@style/dialog_divider" />
+    <com.tinder.views.CustomButton android:id="@id/moment_game_dialog_btn_hide_moments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/moment_dialog_hide_moments" android:layout_below="@id/divider_likemsg" style="@style/moment_game_dialog_text" />
+    <View android:id="@id/divider_hide_moments" android:layout_width="fill_parent" android:layout_height="@dimen/height_separator" android:layout_below="@id/moment_game_dialog_btn_hide_moments" style="@style/dialog_divider" />
+    <com.tinder.views.CustomButton android:id="@id/moment_game_dialog_btn_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/block" android:layout_below="@id/divider_hide_moments" style="@style/moment_game_dialog_text" />
+    <View android:id="@id/divider_moment_block" android:layout_width="fill_parent" android:layout_height="@dimen/height_separator" android:layout_below="@id/moment_game_dialog_btn_block" style="@style/dialog_divider" />
+    <com.tinder.views.CustomButton android:id="@id/moment_game_dialog_btn_report" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report" android:layout_below="@id/divider_moment_block" style="@style/moment_game_dialog_text" />
+</com.tinder.views.RoundedRelativeLayout>

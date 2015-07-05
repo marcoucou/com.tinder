@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:right="@dimen/search_box_og_right_offset" android:bottom="@dimen/search_box_og_bottom_offset">
+        <shape>
+            <solid android:color="@color/orange" />
+        </shape>
+    </item>
+    <item android:left="@dimen/search_box_white_left_offset" android:right="@dimen/search_box_white_right_offset" android:bottom="@dimen/search_box_white_top_offset">
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/search_box_white_bottom_offset">
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

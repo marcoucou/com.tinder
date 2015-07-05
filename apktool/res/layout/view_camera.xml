@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:background="@drawable/photogallery" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_xlarge" android:layout_toLeftOf="@id/btn_shoot" android:layout_alignParentBottom="true">
+        <com.tinder.views.RoundImageView android:id="@id/btn_gallery" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="centerCrop" app:defaultStyle="slightly_rounded" />
+    </RelativeLayout>
+    <ImageView android:id="@id/btn_shoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_med" android:src="@drawable/shutter_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/btn_shoot" />
+    <ImageView android:id="@id/btn_camera_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_xlarge" android:src="@drawable/settingstoggle_icon" android:layout_toRightOf="@id/btn_shoot" android:layout_alignParentBottom="true" />
+</RelativeLayout>

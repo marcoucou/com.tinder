@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_frag_recs" android:background="@color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_gamepad" android:clipChildren="false" android:clipToPadding="false" android:layout="@layout/view_rec_gamepad" android:inflatedId="@id/recs_layout_gamepad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_med" android:layout_below="@id/view_card_stack" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ViewStub android:id="@id/stub_gamepad_old" android:clipChildren="false" android:clipToPadding="false" android:layout="@layout/view_rec_gamepad_old" android:inflatedId="@id/recs_layout_gamepad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_med" android:layout_below="@id/view_card_stack" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.tinder.views.LoadingView android:id="@id/recs_loadingview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.tinder.views.StackLayout android:gravity="center|top" android:id="@id/view_card_stack" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rec_card_top_margin" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

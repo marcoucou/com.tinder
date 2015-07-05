@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_alignParentTop="true">
+        <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:gravity="center" android:id="@id/text_tab_activity" android:paddingTop="@dimen/padding_med" android:paddingBottom="@dimen/padding_med" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/activity" android:layout_weight="1.0" android:contentDescription="@string/text_tab_activity" app:font="semi_bold" />
+        <View android:background="@color/moments_tab_divider" android:layout_width="@dimen/default_divider_stroke_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_med" android:layout_marginBottom="@dimen/margin_med" />
+        <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:gravity="center" android:id="@id/text_tab_my_moments" android:paddingTop="@dimen/padding_med" android:paddingBottom="@dimen/padding_med" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/my_moments" android:layout_weight="1.0" android:contentDescription="@string/text_tab_my_moments" app:font="semi_bold" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/moments_tab_divider" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_stroke_width" android:layout_below="@id/linear_tabs" />
+    <com.tinder.views.SkippableViewPager android:id="@id/pager_my_moments" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider" />
+</RelativeLayout>

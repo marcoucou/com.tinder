@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/actionbar_menu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_size" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/view_back_icon" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_xsmall" android:layout_marginRight="@dimen/margin_xsmall" android:src="@drawable/selector_actionbar_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="actionbar_left_button" />
+        <ImageButton android:id="@id/view_ab_icon" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_ab_app_settings" android:layout_toRightOf="@id/view_back_icon" android:layout_centerVertical="true" />
+        <com.tinder.views.CustomTextView android:id="@id/view_back_title" android:text="@string/app_settings" android:layout_toRightOf="@id/view_ab_icon" android:layout_centerVertical="true" app:font="regular" style="@style/ab_text" />
+        <View android:id="@id/ab_divider" android:visibility="visible" android:layout_alignParentBottom="true" style="@style/ab_divider" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbar_menu">
+        <RelativeLayout android:padding="@dimen/padding_med" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_med">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.tinder.views.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notifications" app:font="light|light_italic" style="@style/settings_header" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout_notifications" android:background="@drawable/settings_button" android:paddingLeft="@dimen/padding_large" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xsmall" android:layout_marginBottom="@dimen/margin_large">
+                    <RelativeLayout android:paddingLeft="@dimen/padding_small" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_matches" android:layout_centerVertical="true" app:font="light|light_italic" />
+                        <CheckBox android:id="@id/check_new_match_push" android:layout_alignParentRight="true" style="@style/settings_right_checkbox" />
+                    </RelativeLayout>
+                    <View android:background="@color/text_light" android:paddingRight="@dimen/padding_med" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <RelativeLayout android:paddingLeft="@dimen/padding_small" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/messages" android:layout_centerVertical="true" app:font="light|light_italic" />
+                        <CheckBox android:id="@id/check_new_message_push" android:layout_alignParentRight="true" style="@style/settings_right_checkbox" />
+                    </RelativeLayout>
+                    <View android:background="@color/text_light" android:paddingRight="@dimen/padding_med" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <RelativeLayout android:paddingLeft="@dimen/padding_small" android:paddingTop="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.tinder.views.CustomTextView android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moment_likes" android:layout_centerVertical="true" app:font="light|light_italic" />
+                        <CheckBox android:id="@id/check_new_moment_like_push" android:layout_alignParentRight="true" style="@style/settings_right_checkbox" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.tinder.views.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_distances_in" android:contentDescription="show_distance_in_units_text" app:font="light|light_italic" style="@style/settings_header" />
+                    <com.tinder.views.CustomTextView android:id="@id/textView_distances_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:font="semi_bold" style="@style/settings_header" />
+                </RelativeLayout>
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayout_units" android:padding="@dimen/settings_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_med" android:layout_marginBottom="@dimen/margin_med" style="@style/settings_item_gender">
+                    <com.tinder.views.CustomRadioButton android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:gravity="center" android:id="@id/radioButton_miles" android:background="@drawable/radiobtn_blue" android:padding="@dimen/settings_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/miles" android:layout_weight="1.0" android:contentDescription="radio_button_miles" app:font="light|light_italic" />
+                    <com.tinder.views.CustomRadioButton android:textSize="@dimen/text_xlarge" android:textColor="@color/text_dark" android:gravity="center" android:id="@id/radioButton_kilometers" android:background="@drawable/radiobtn_blue" android:padding="@dimen/settings_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/kilometers" android:layout_weight="1.0" android:contentDescription="radio_button_kilometers" app:font="light|light_italic" />
+                </RadioGroup>
+                <com.tinder.views.CustomButton android:id="@id/button_restore_purchase" android:layout_marginTop="@dimen/margin_med" android:text="@string/plus_restore" android:contentDescription="@string/plus_restore" app:font="light|light_italic" style="@style/settings_button" />
+                <com.tinder.views.CustomButton android:id="@id/button_privacy_policy" android:layout_marginTop="@dimen/margin_xxsmall" android:text="@string/privacy_policy" app:font="light|light_italic" style="@style/settings_button" />
+                <com.tinder.views.CustomButton android:id="@id/button_tos" android:layout_marginTop="@dimen/margin_xxsmall" android:text="@string/terms_of_service" app:font="light|light_italic" style="@style/settings_button" />
+                <com.tinder.views.CustomButton android:id="@id/button_logout" android:layout_marginTop="@dimen/margin_xsmall" android:text="@string/logout" android:contentDescription="logout_button" app:font="light|light_italic" style="@style/settings_button" />
+                <com.tinder.views.CustomEditText android:textColor="@color/black" android:id="@id/editText_ip_config" android:background="@drawable/selector_button_translucent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_med" android:hint="Enter base URL" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xxlarge" android:src="@drawable/shape_135" />
+                <com.tinder.views.CustomTextView android:textSize="@dimen/text_small" android:textColor="@color/frag_match_gray" android:gravity="center" android:id="@id/txt_version_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_xxlarge" app:font="light|light_italic" />
+                <com.tinder.views.CustomButton android:textColor="@color/text_light" android:id="@id/button_delete_account" android:layout_width="fill_parent" android:layout_height="@dimen/button_height_med" android:layout_marginLeft="@dimen/margin_xsmall" android:layout_marginTop="@dimen/margin_med" android:layout_marginBottom="@dimen/margin_large" android:text="@string/delete_account" app:font="light|light_italic" style="@style/button_white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <View android:id="@id/blocker" android:background="@color/transparent" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>
